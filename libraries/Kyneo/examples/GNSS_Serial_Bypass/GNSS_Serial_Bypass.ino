@@ -27,6 +27,8 @@
  * 
  * 3) Bypass all the data from GNSS to Serial (Kyneo USB-Serial interface)
  * 
+ * Note: "Serial" can be changed with "Serial1", to forward the frames to any serial device  
+ * connected to Kyneo headers.
  *************************************************************************************************/
 #include <KyneoBoard.h>
 #include <SoftwareSerial.h>
@@ -36,8 +38,8 @@ KyneoGNSS gnss;
 
 void setup()
 {
-  Serial.begin(57600); // Choose your preferred baudrate here.
-  gnss.init(); // equivalent to init(9600). Use last valid baudrate setting here... 
+  Serial.begin(57600);            // Choose your preferred baudrate here.
+  gnss.init();                    // equivalent to init(9600). Use last valid baudrate setting here... 
   gnss.setBaudrate(9600);  
 
   //set rate divider(GPGLL, GPRMC, GPVTG, GPGGA, GPGSA, GPGSV, PMTKCHN). 
