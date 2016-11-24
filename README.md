@@ -9,7 +9,7 @@ Instructions:
 	- Open the "libraries" folder and copy all it's content into your user's /Documents/Arduino/libraries folder.
 	- Open the Arduino IDE again and... ready to work with Kyneo
 
-Last tested Arduino IDE Version: 1.6.12
+Last tested Arduino IDE Version: 1.6.5
 
 ### Kyneo
 
